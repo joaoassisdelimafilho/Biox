@@ -1,11 +1,12 @@
 const CONFIG = {
-    nome_loja: "ISABELA",
+    nome_loja: "ALFE VEICULOS",
     logo_url: "logo.jpg",
+    background_url: "Fundo.png",
     assinatura_rodape: "EST. 2026 | ALTA CURADORIA",
-    whatsapp: "https://wa.me/5511999999999", 
-    catalogo_whatsapp: "https://wa.me/c/5519995027183",
-    facebook_page: "https://facebook.com/suapagina",
-    rota_localizacao: "https://maps.app.goo.gl/gKyVErJkxJS2zWLR7?g_st=ac",
-    instagram: "https://instagram.com/seuuser",
-    tiktok: "https://tiktok.com/@seuuser"
+    whatsapp: "https://wa.me/5519995027183", 
+    catalogo_whatsapp: "em-breve.html",
+    facebook_page: "em-breve.html",
+    rota_localizacao: "em-breve.html",
+    instagram: "em-breve.html",
+    tiktok: "em-breve.html"
 };

@@ -47,6 +47,9 @@
 
     <script src="config.js"></script>
     <script>
+        // Aplica a imagem de fundo definida no config.js
+        document.body.style.backgroundImage = `url('${CONFIG.background_url}')`;
+
         document.getElementById('loja-logo').src = CONFIG.logo_url;
         document.getElementById('loja-nome').innerText = CONFIG.nome_loja;
         document.getElementById('link-whatsapp').href = CONFIG.whatsapp;

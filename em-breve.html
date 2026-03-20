@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Em Breve - ALFE VEÍCULOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .coming-soon-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .message {
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #c5a059;
+            margin-top: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .btn-voltar {
+            margin-top: 50px;
+            text-decoration: none;
+            color: rgba(255,255,255,0.5);
+            font-size: 10px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <div class="coming-soon-content">
+            <img id="loja-logo" src="" alt="Logo" class="logo">
+            <h1 id="loja-nome"></h1>
+            <div class="divider"></div>
+            
+            <i class="fas fa-clock" style="font-size: 30px; margin-bottom: 20px; opacity: 0.6;"></i>
+            <p class="message">Em Breve</p>
+            <p style="font-size: 10px; letter-spacing: 1px; opacity: 0.5; margin-top: 10px;">ESTAMOS PREPARANDO ALGO EXCLUSIVO</p>
+
+            <a href="index.html" class="btn-voltar">VOLTAR AO INÍCIO</a>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script>
+        document.body.style.backgroundImage = `url('${CONFIG.background_url}')`;
+        document.getElementById('loja-logo').src = CONFIG.logo_url;
+        document.getElementById('loja-nome').innerText = CONFIG.nome_loja;
+    </script>
+</body>
+</html>
