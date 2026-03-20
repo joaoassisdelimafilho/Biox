@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Premium Store - Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <header>
+            <img id="loja-logo" src="logo.jpg" alt="Logo" class="logo">
+            <h1 id="loja-nome">CARREGANDO...</h1>
+            <div class="divider"></div>
+        </header>
+
+        <nav class="links">
+            <a id="link-whatsapp" href="" class="btn-premium">
+                <i class="fab fa-whatsapp"></i> ATENDIMENTO EXCLUSIVO
+            </a>
+            <a id="link-catalogo" href="" class="btn-premium">
+                <i class="fas fa-shopping-bag"></i> CATÁLOGO WHATSAPP
+            </a>
+            <a id="link-facebook" href="" class="btn-premium">
+                <i class="fab fa-facebook-f"></i> NOSSA COMUNIDADE
+            </a>
+            <a id="link-rota" href="" class="btn-premium">
+                <i class="fas fa-location-dot"></i> VISITE NOSSA LOJA
+            </a>
+        </nav>
+
+        <footer>
+            <div class="social-footer">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="copyright"></p>
+        </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script>
+        document.getElementById('loja-logo').src = CONFIG.logo_url;
+        document.getElementById('loja-nome').innerText = CONFIG.nome_loja;
+        document.getElementById('link-whatsapp').href = CONFIG.whatsapp;
+        document.getElementById('link-catalogo').href = CONFIG.catalogo_whatsapp;
+        document.getElementById('link-facebook').href = CONFIG.facebook_page;
+        document.getElementById('link-rota').href = CONFIG.rota_localizacao;
+        
+        document.querySelector('.social-footer a:nth-child(1)').href = CONFIG.instagram;
+        document.querySelector('.social-footer a:nth-child(2)').href = CONFIG.tiktok;
+        document.querySelector('.copyright').innerText = CONFIG.assinatura_rodape;
+    </script>
+</body>
+</html>
